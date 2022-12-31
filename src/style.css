@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* CONFIG STYLE */
+  body {
+    @apply font-inter text-base font-normal text-[#213547] dark:text-white bg-white dark:bg-primary transition-all duration-500 ease-in-out;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-4 h-4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-[100vh] border-solid border-4 border-[#213547];
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-[#213547];
+  }
+}
+
+@layer components {
+  /* CONFIG STYLE */
+  .container {
+    @apply w-[90%] md:w-4/5 lg:w-[90%] 2xl:w-[1500px] m-auto max-w-[90%] overflow-hidden;
+  }
+
+  .routes {
+    @apply mt-20;
+  }
+
+  .title {
+    @apply font-bold text-2xl first-letter:capitalize;
+  }
+
+  /* NAVBAR TOGGLER */
+  .toggler {
+    @apply w-5 bg-primary h-0.5 mb-1 transition ease-in-out duration-500 last:mb-0;
+  }
+
+  .change .toggler:nth-child(1) {
+    transform: translate(1px, 6px) rotate(45deg);
+  }
+
+  .change .toggler:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .change .toggler:nth-child(3) {
+    transform: translate(0px, -6px) rotate(-45deg);
+  }
+
+  /* FORM STYLE */
+  .label-style {
+    @apply block mb-2 text-gray-600 capitalize text-sm font-semibold;
+  }
+
+  .input-style {
+    @apply border-solid border-gray-300 border-2 outline-none rounded-xl h-[44px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-xl disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:capitalize !important;
+  }
+  .textarea {
+    @apply h-auto !important;
+  }
+  input[type='file'] {
+    @apply disabled:px-4 disabled:py-[13px] !important;
+  }
+
+  .disabled {
+    @apply rounded-xl border border-gray-300 bg-gray-50 p-4;
+  }
+
+  .error {
+    @apply bg-red-100 text-red-500 border-2 border-[#EF4444] rounded-xl p-3 my-3 text-center;
+  }
+  .err {
+    @apply rounded-xl border-solid border-2 border-[#EF4444] mb-2 !important;
+  }
+
+  .err-message {
+    @apply text-[#EF4444];
+  }
+
+  .submit-btn {
+    @apply bg-transparent border border-white text-white rounded-md p-4 font-semibold btn w-full md:basis-[30%] cursor-pointer mt-4 md:mt-0;
+  }
+
+  /* V-SELECT */
+  .v-style {
+    @apply bg-white;
+  }
+  .v-style .vs__selected-options {
+    @apply px-0.5 py-1;
+  }
+
+  .v-style .vs__search {
+    @apply w-auto border-none rounded-xl p-1 transition-all duration-200 ease-in-out disabled:rounded-xl disabled:border-2 disabled:border-gray-300 disabled:bg-gray-50 disabled:cursor-default;
+  }
+  .v-style .vs__dropdown-toggle {
+    @apply border-2 border-gray-300 rounded-xl h-[44px] flex items-center px-4;
+  }
+  .v-style .vs__clear,
+  .v-style .vs__open-indicator {
+    @apply cursor-pointer;
+  }
+
+  .v-style .vs__search::placeholder {
+    @apply text-gray-500;
+  }
+
+  .v-style .vs__selected,
+  .v-style .vs__dropdown-menu {
+    @apply capitalize;
+  }
+
+  .v-style .vs__search:focus {
+    @apply w-auto;
+  }
+
+  /* FORM ERRORS */
+
+  .error {
+    @apply bg-red-100 text-red-500 border-2 border-[#EF4444] rounded-xl p-3 my-3 text-center;
+  }
+  .err {
+    @apply rounded-xl border-solid border-2 border-[#EF4444] mb-2 !important;
+  }
+
+  .err-message {
+    @apply text-[#EF4444];
+  }
+
+  .success {
+    @apply border-solid border border-green-400 mb-2 !important;
+  }
+
+  /* ICONS */
+  .icon {
+    @apply border rounded-full h-[30px] w-[30px] text-base flex justify-center items-center font-bold transition-all ease-in-out duration-200 cursor-pointer;
+  }
+
+  /* BUTTON */
+  .btn {
+    @apply outline-none px-4 py-3 h-[44px] flex justify-center items-center gap-2 leading-5 text-white text-sm text-center font-semibold  transition-all ease-in-out duration-200 bg-blue-700 rounded-xl hover:scale-95 cursor-pointer uppercase;
+  }
+}
+
+@layer utilities {
+  /* NAVIGATION TOGGLER */
+  .open-navbar {
+    @apply left-0 lg:left-0 transition-[left] duration-500 ease-in-out;
+  }
+}

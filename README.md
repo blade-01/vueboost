@@ -1,15 +1,15 @@
-<p align='center'>
+<!--<p align='center'>
   <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
+</p>-->
 
 <p align='center'>
-Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
+Mocking up web app with <b>V</b><sup><em>(speed)</em></sup><br>
 </p>
 
 <br>
 
 <h2 align="center">
-<a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 3
+<a href="https://github.com/antfu/vitesse">V</a> for Nuxt 3
 </h2><br>
 
 <pre align="center">

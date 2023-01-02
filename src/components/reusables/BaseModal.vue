@@ -16,8 +16,11 @@
   </Teleport>
 </template>
 
-<script setup>
-const isActive = false
+<script setup lang="ts">
+const isActive = false;
+const toggleModal = (value: boolean): void => {
+  console.log(value)
+}
 </script>
 
 <style scoped>

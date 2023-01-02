@@ -12,12 +12,17 @@
             <a href="https://github.com/blade-01" class="underline">Blade's</a>
             Boilerplate
           </h1>
+          <div class="flex gap-3">
+            <Icon icon="mdi:youtube" :inline="true" width="96" horizontalFlip="true" />
+            <span class="mdi mdi-youtube"></span>
+            <YouTubeIcon color="green" />
+          </div>
           <p
             class="max-w-md leading-[25px] priText text-base mt-2"
             data-aos="fade"
             data-aos-delay="500"
           >
-          Vue 3 + TS + Pinia + TailwindCSS + MDI Fonts + Vue Select
+            Vue 3 + TS + Pinia + TailwindCSS + MDI Fonts + Vue Select
           </p>
         </div>
 
@@ -39,6 +44,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Icon } from '@iconify/vue'
+import YouTubeIcon from '~icons/mdi/youtube'
+</script>
 
 <style scoped></style>

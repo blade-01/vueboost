@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   /* CONFIG STYLE */
   body {
@@ -70,7 +70,7 @@
   .input-style {
     @apply border-solid border-gray-300 border-2 outline-none rounded-xl h-[44px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-xl disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:capitalize !important;
   }
-  .textarea {
+  .input-style.textarea-style {
     @apply h-auto !important;
   }
   input[type='file'] {
@@ -128,8 +128,13 @@
   .error {
     @apply bg-red-100 text-red-500 border-2 border-[#EF4444] rounded-xl p-3 my-3 text-center;
   }
+
   .err {
     @apply rounded-xl border-solid border-2 border-[#EF4444] mb-2 !important;
+  }
+
+  .err.ql-editor {
+    @apply rounded-b-xl border-solid border-2 border-[#EF4444] mb-2 !important;
   }
 
   .err-message {
@@ -152,6 +157,27 @@
 
   .submit-btn {
     @apply bg-transparent border border-white text-white rounded-md p-4 font-semibold btn w-full md:basis-[30%] cursor-pointer mt-4 md:mt-0;
+  }
+
+  /* VUE TRANSITIONS*/
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity ease-in-out 0.3s;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .zoom-enter-active,
+  .zoom-leave-active {
+    transition: transform ease-in-out 0.3s;
+  }
+
+  .zoom-enter-from,
+  .zoom-leave-to {
+    transform: scale(0);
   }
 }
 

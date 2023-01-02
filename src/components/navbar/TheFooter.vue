@@ -2,7 +2,7 @@
   <footer class="py-16 bg-primary">
     <div class="container">
       <div class="md:grid grid-cols-3 lg:flex justify-between">
-        <router-link :to="{ name: 'home' }">
+        <router-link to="/">
           <img
             src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png"
             alt="logo"

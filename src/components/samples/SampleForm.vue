@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      <base-input
+      <BaseInput
         label="Custom name"
         v-model="state.username"
         type="text"
@@ -10,7 +10,7 @@
         @blur="v$.username.$touch()"
         @focus="v$.username.$reset()"
       />
-      <base-input
+      <BaseInput
         v-model="state.name"
         label="Full Name"
         type="text"
@@ -18,7 +18,7 @@
         @blur="v$.name.$touch()"
         @focus="v$.name.$reset()"
       />
-      <base-input
+      <BaseInput
         v-model="state.email"
         label="Email"
         type="email"
@@ -26,16 +26,15 @@
         @blur="v$.email.$touch()"
         @focus="v$.email.$reset()"
       />
-      <base-input
+      <BaseFile
         v-model="state.image"
         label="Image"
-        type="file"
-        accept="image/*"
+        file-type="image/*"
         :error="v$.image.$error"
         @blur="v$.image.$touch()"
         @focus="v$.image.$reset()"
       />
-      <base-input
+      <BaseInput
         v-model="state.password"
         label="Password"
         :type="type"
@@ -45,7 +44,7 @@
         @focus="v$.password.$reset()"
         @change-type="showPassword"
       />
-      <base-select
+      <BaseSelect
         v-model="state.gender"
         label="Gender"
         :options="genders"
@@ -54,7 +53,7 @@
         @blur="v$.gender.$touch()"
         @focus="v$.gender.$reset()"
       />
-      <div class="md:col-span-2">
+      <!-- <div class="md:col-span-2">
         <label for="phoneNumber" class="label-style">Phone Number</label>
         <vue-tel-input
           id="phoneNumber"
@@ -74,35 +73,48 @@
         >
           Please provide a valid phone number</small
         >
-      </div>
-      <base-input
+      </div> -->
+      <BaseTextarea
         class="md:col-span-2"
         v-model="state.message"
         label="Message"
-        type="textarea"
-        rows="5"
+        rows="3"
         :error="v$.message.$error"
         @blur="v$.message.$touch()"
         @focus="v$.message.$reset()"
       />
+      <BasePhone
+        class="md:col-span-2"
+        v-model="state.phoneNumber"
+        label="Phone Number II"
+        :placeholder="'Phone Number'"
+        :error="v$.phoneNumber.$error"
+        @blur="v$.phoneNumber.$touch()"
+        @focus="v$.phoneNumber.$reset()"
+        @handle-validation="handleValidation"
+      />
+      <!-- @phone-input="updatePhoneNumber" -->
+      <BaseEditor
+        class="md:col-span-2"
+        v-model="state.editor"
+        label="Editor"
+        :placeholder="'Place contents here...'"
+        error-message="Please type in something, anything 😞"
+        :error="v$.editor.$error"
+        @blur="v$.editor.$touch()"
+        @focus="v$.editor.$reset()"
+      />
     </div>
     <div class="flex justify-end mt-5">
-      <base-submit-btn label="Submit" @click="submitForm" />
+      <BaseSubmitBtn label="Submit" @click="submitForm" />
     </div>
   </form>
 </template>
 
 <script setup lang="ts">
-import 'vue-select/dist/vue-select.css'
-import { reactive } from 'vue'
-import BaseInput from '../forms/BaseInput.vue'
-import BaseSelect from '../forms/BaseSelect.vue'
-import BaseSubmitBtn from '../buttons/BaseSubmitBtn.vue'
-import { VueTelInput } from 'vue-tel-input'
 import useVuelidate from '@vuelidate/core'
 import { required, email, minLength, maxLength } from '@vuelidate/validators'
 import { useToast } from 'vue-toastification'
-import { usePassword } from '../../composables/usePassword'
 
 // Toast
 const toast = useToast()
@@ -123,6 +135,7 @@ const state = reactive<{
   message: string
   gender: string
   phoneNumber: string | number
+  editor: string
 }>({
   username: '',
   name: '',
@@ -131,8 +144,15 @@ const state = reactive<{
   image: '',
   message: '',
   gender: '',
-  phoneNumber: ''
+  phoneNumber: '',
+  editor: ''
 })
+
+// Mobile Number Validation
+let inputValue = reactive<any>('') // inputValue.nationalNumber (for phone number), inputValue.countryCallingCode (for calling code +234 etc.)
+const handleValidation = ($event: Event) => {
+  inputValue = $event
+}
 
 // Validation rules
 const rules = {
@@ -143,15 +163,14 @@ const rules = {
   image: { required },
   message: { required },
   gender: { required },
-  phoneNumber: { required, minLength: minLength(8), maxLength: maxLength(11) }
+  phoneNumber: {
+    required,
+    minLength: minLength(8),
+    maxLength: maxLength(11)
+  },
+  editor: { required }
 }
 const v$ = useVuelidate(rules, state)
-
-// Mobile Number Validation
-let inputValue = reactive<any>('') // inputValue.nationalNumber (for phone number), inputValue.countryCallingCode (for calling code +234 etc.)
-const handleValidation = ($event: Event) => {
-  inputValue = $event
-}
 
 // Submit form
 const submitForm = () => {

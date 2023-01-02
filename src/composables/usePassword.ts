@@ -1,4 +1,3 @@
-import { ref } from 'vue';
 export function usePassword() {
   const type = ref<string>('password');
   const showPassword = (): void => {

@@ -9,15 +9,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify/json": "^2.2.0",
+    "@iconify/vue": "^4.0.2",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
     "@mdi/font": "^7.1.96",
     "@types/aos": "^3.0.4",
+    "@vue/compiler-sfc": "^3.2.45",
     "@vuelidate/core": "^2.0.0",
     "@vuelidate/validators": "^2.0.0",
+    "@vueup/vue-quill": "^1.0.1",
+    "@vueuse/core": "^9.9.0",
+    "@vueuse/head": "^1.0.22",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.2.1",
     "pinia": "^2.0.28",
     "tw-elements": "^1.0.0-alpha13",
+    "unplugin-icons": "^0.14.15",
     "vue": "^3.2.45",
+    "vue-i18n": "^9.2.2",
     "vue-router": "4",
     "vue-select": "^4.0.0-beta.6",
     "vue-tel-input": "^6.0.5",
@@ -31,7 +40,13 @@
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.12.1",
+    "unplugin-vue-components": "^0.22.12",
+    "unplugin-vue-macros": "^1.2.1",
     "vite": "^4.0.0",
+    "vite-plugin-pages": "^0.28.0",
+    "vite-plugin-pwa": "^0.14.0",
+    "vite-plugin-vue-inspector": "^2.0.4",
     "vue-tsc": "^1.0.11"
   }
 }

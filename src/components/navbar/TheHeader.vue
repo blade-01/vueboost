@@ -4,7 +4,7 @@
   >
     <div class="container">
       <div class="header-content flex justify-between items-center w-full">
-        <router-link :to="{ name: 'home' }">
+        <router-link to="/">
           <img
             src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png"
             alt="logo"
@@ -18,7 +18,7 @@
           <ul class="block text-center lg:flex lg:space-x-12 lg:m-0 lg:items-center">
             <li class="mb-8 lg:m-0 mt-10" v-for="route in routes" :key="route.name">
               <router-link
-                :to="{ name: route.routeName }"
+                :to="route.routePath"
                 class="font-medium capitalize"
                 active-class="header-link"
                 >{{ route.name }}</router-link
@@ -46,15 +46,15 @@ import { useRouter } from 'vue-router'
 
 const routes: {
   name: string
-  routeName: string
+  routePath: string
 }[] = [
   {
     name: 'Home',
-    routeName: 'home'
+    routePath: '/'
   },
   {
     name: 'About',
-    routeName: 'about'
+    routePath: '/about'
   }
 ]
 const show = ref<boolean>(false)

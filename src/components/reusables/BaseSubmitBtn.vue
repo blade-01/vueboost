@@ -12,9 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '../../store/main'
-import { storeToRefs } from 'pinia'
-import { ref } from 'vue'
 const isLoading = ref(false)
 interface Props {
   label: string

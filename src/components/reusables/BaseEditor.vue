@@ -2,19 +2,17 @@
   <div class="input-field">
     <label class="label-style" :for="label" v-if="label">{{ label }}</label>
     <QuillEditor
+      ref="quill"
       :id="label"
       theme="snow"
       toolbar="full"
       :placeholder="`'${placeholder}'`"
-      :value:content="modelValue"
+      v-model:content="content"
       contentType="html"
       :readOnly="readOnly"
       style="height: 200px"
-      @om-input="$emit('update:modelValue')"
-      @update:content="$emit('update:modelValue')"
       :class="{ err: error }"
     />
-    this.editor.getText() ? this.editor.root.innerHTML : ''
     <small
       :class="{ 'err-message': error }"
       v-if="error && errorMessage"
@@ -34,7 +32,7 @@
 
 <script setup lang="ts">
 interface Props {
-  modelValue: string | number | object
+  modelValue: string | number
   label?: string
   placeholder?: string
   error?: string | boolean
@@ -43,7 +41,34 @@ interface Props {
 }
 
 const props = defineProps<Props>()
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits({
+  'update:modelValue': (value) => true
+})
+
+const content = ref('')
+const quill = ref<any>(null)
+let newContent = ''
+
+watch(content, (newValue) => {
+  newContent = newValue
+  emit('update:modelValue', newValue)
+})
+
+watch(
+  () => props.modelValue,
+  (newValue: any) => {
+    if (newContent === newValue) return
+    quill.value.setHTML(newValue)
+
+    // Workaround https://github.com/vueup/vue-quill/issues/52
+    // move cursor to end
+    nextTick(() => {
+      let q = quill.value.getQuill()
+      q.setSelection(newValue.length, 0, 'api')
+      q.focus()
+    })
+  }
+)
 </script>
 
 <style scoped></style>

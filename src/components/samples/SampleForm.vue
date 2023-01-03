@@ -53,36 +53,6 @@
         @blur="v$.gender.$touch()"
         @focus="v$.gender.$reset()"
       />
-      <!-- <div class="md:col-span-2">
-        <label for="phoneNumber" class="label-style">Phone Number</label>
-        <vue-tel-input
-          id="phoneNumber"
-          v-model="state.phoneNumber"
-          :error="v$.phoneNumber.$error"
-          @blur="v$.phoneNumber.$touch()"
-          @focus="v$.phoneNumber.$reset()"
-          :class="{ err: v$.phoneNumber.$error }"
-          :autoFormat="false"
-          @validate="handleValidation"
-        ></vue-tel-input>
-        <small
-          :class="{
-            'err-message': v$.phoneNumber.$error
-          }"
-          v-show="v$.phoneNumber.$error"
-        >
-          Please provide a valid phone number</small
-        >
-      </div> -->
-      <BaseTextarea
-        class="md:col-span-2"
-        v-model="state.message"
-        label="Message"
-        rows="3"
-        :error="v$.message.$error"
-        @blur="v$.message.$touch()"
-        @focus="v$.message.$reset()"
-      />
       <BasePhone
         class="md:col-span-2"
         v-model="state.phoneNumber"
@@ -93,12 +63,20 @@
         @focus="v$.phoneNumber.$reset()"
         @handle-validation="handleValidation"
       />
-      <!-- @phone-input="updatePhoneNumber" -->
+      <BaseTextarea
+        class="md:col-span-2"
+        v-model="state.message"
+        label="Message"
+        rows="3"
+        :error="v$.message.$error"
+        @blur="v$.message.$touch()"
+        @focus="v$.message.$reset()"
+      />
       <BaseEditor
         class="md:col-span-2"
         v-model="state.editor"
         label="Editor"
-        :placeholder="'Place contents here...'"
+        placeholder="Place contents here..."
         error-message="Please type in something, anything 😞"
         :error="v$.editor.$error"
         @blur="v$.editor.$touch()"

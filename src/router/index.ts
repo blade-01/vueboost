@@ -6,4 +6,10 @@ const router = createRouter({
   routes
 });
 
+router.beforeEach((to) => {
+  if (to.meta.requiresAuth) {
+    return { path: '/' };
+  }
+});
+
 export default router;

@@ -5,7 +5,6 @@
     <vue-tel-input
       id="phoneNumber"
       :modelValue="modelValue"
-      :value="modelValue"
       v-bind="$attrs"
       :class="{ err: error }"
       :autoFormat="false"
@@ -43,7 +42,7 @@ interface Props {
 const props = defineProps<Props>()
 const emit = defineEmits(['handleValidation', 'update:modelValue'])
 
-const handleValidation = ($event: Event) => {
+const handleValidation = ($event: Event): void => {
   emit('handleValidation', $event)
 }
 </script>

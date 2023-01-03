@@ -5,7 +5,6 @@ import Inspector from 'vite-plugin-vue-inspector';
 import Pages from 'vite-plugin-pages';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
-import VueMacros from 'unplugin-vue-macros/vite';
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 import path from 'path';
 import Icons from 'unplugin-icons/vite';
@@ -46,19 +45,21 @@ export default defineConfig({
       toggleButtonVisibility: 'never'
     }),
     // https://github.com/hannoeru/vite-plugin-pages
-    Pages({ dirs: 'src/pages', extensions: ['vue', 'ts', 'js'] }),
+    Pages({
+      dirs: 'src/pages',
+      extensions: ['vue', 'ts', 'js']
+    }),
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
         'vue',
         'vue-router',
         'vue-i18n',
-        'vue/macros',
         '@vueuse/head',
         '@vueuse/core'
       ],
       dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables', 'src/stores'],
+      dirs: ['src/composables', 'src/store'],
       vueTemplate: true
     }),
     // https://github.com/antfu/unplugin-vue-components

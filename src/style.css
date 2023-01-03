@@ -70,9 +70,11 @@
   .input-style {
     @apply border-solid border-gray-300 border-2 outline-none rounded-xl h-[44px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-xl disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:capitalize !important;
   }
+
   .input-style.textarea-style {
     @apply h-auto !important;
   }
+
   input[type='file'] {
     @apply disabled:px-4 disabled:py-[13px] !important;
   }

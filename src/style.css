@@ -136,7 +136,9 @@
   .err.ql-editor {
     @apply rounded-b-xl border-solid border-2 border-[#EF4444] mb-2 !important;
   }
-
+  .err .ql-editor.ql-blank::before {
+    @apply relative !important;
+  }
   .err-message {
     @apply text-[#EF4444];
   }

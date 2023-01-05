@@ -18,13 +18,13 @@
           <li v-for="(link, index) in links" :key="index">
             <p class="text-2xl font-semibold pb-4">{{ link.title }}</p>
             <span v-for="(list, index) in link.list" :key="index">
-              <span v-if="!list.sub" class="pb-2">
+              <span v-if="!list.sub" class="block pb-2">
                 <RouterLink
                   :to="`${list.route}`"
                   active-class="sidebar-active"
                   class="flex items-center gap-3 sidebar-hover"
                 >
-                  <Icon :icon="`mdi:${list.icon}`" width="25" />
+                  <Icon v-if="list.icon" :icon="`mdi:${list.icon}`" width="25" />
                   <span class="font-light">{{ list.name }}</span>
                 </RouterLink>
               </span>
@@ -34,7 +34,7 @@
                   @click="toggleDropdown(list)"
                 >
                   <span class="flex items-center gap-3">
-                    <Icon :icon="`mdi:${list.icon}`" width="25" />
+                    <Icon v-if="list.icon" :icon="`mdi:${list.icon}`" width="25" />
                     <span class="font-light">{{ list.name }}</span>
                   </span>
                   <Icon
@@ -48,7 +48,7 @@
                   ></Icon>
                 </div>
                 <div
-                  class="flex flex-col gap-y-0.5"
+                  class="flex flex-col"
                   :class="[
                     list.show
                       ? 'transition-[max-height] max-h-[5000px] duration-200 ease-in'
@@ -56,11 +56,11 @@
                   ]"
                 >
                   <div v-for="(sub, index) in list.sub" :key="index">
-                    <p class="pl-[37px] pb-1.5">
+                    <p class="pl-[37px]">
                       <RouterLink
                         :to="`${sub.route}`"
-                        active-class="sidebar-active"
-                        class="flex items-center gap-3 sidebar-hover"
+                        active-class="inner-sidebar-active"
+                        class="flex items-center gap-3 inner-sidebar-hover"
                       >
                         <span class="font-light">{{ sub.name }}</span>
                       </RouterLink>
@@ -78,7 +78,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-const { links, activeSidebar, toggleDropdown } = useMainStore()
+const { links, toggleDropdown } = useSidebarUtils()
 defineProps<{ nav: boolean }>()
 </script>
 
@@ -94,7 +94,15 @@ defineProps<{ nav: boolean }>()
   @apply bg-priText rounded-md text-white hover:bg-priText !important;
 }
 
+.inner-sidebar-active {
+  @apply rounded-md text-priText font-medium !important;
+}
+
 .sidebar-hover {
   @apply p-3 transition-all ease-in-out duration-300 hover:bg-[#00000042] hover:text-white hover:rounded-md cursor-pointer;
+}
+
+.inner-sidebar-hover {
+  @apply p-3 transition-all ease-in-out duration-300 hover:text-priText cursor-pointer;
 }
 </style>

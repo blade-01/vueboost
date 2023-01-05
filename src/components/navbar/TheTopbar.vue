@@ -7,7 +7,7 @@
             class="mdi mdi-menu text-3xl font-bold cursor-pointer"
             @click="$emit('toggleSidebar')"
           ></span>
-          <p>Dashboard</p>
+          <p>{{ title }}</p>
         </div>
         <div class="flex items-center gap-4">
           <span class="mdi mdi-magnify text-2xl cursor-pointer"></span>
@@ -27,6 +27,7 @@
 </template>
 
 <script setup lang="ts">
+defineProps<{ title: string }>()
 defineEmits(['toggleSidebar'])
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <DashboardLayout>
+  <DashboardLayout title="Dashboard">
     <div>
       <SampleForm />
       <br /><br />

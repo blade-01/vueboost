@@ -286,7 +286,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.16.4", "@babel/parser@^7.18.4", "@babel/parser@^7.20.5", "@babel/parser@^7.20.7":
+"@babel/parser@^7.16.4", "@babel/parser@^7.18.4", "@babel/parser@^7.20.7":
   version "7.20.7"
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.20.7.tgz"
   integrity sha512-T3Z9oHybU+0vZlY9CiDSJQTD5ZapcW18ZctFMi0MOAl/4BjFF4ul7NVSARLdbGO5vDqy9eQiGTV0LtKfvCYvcg==
@@ -1451,137 +1451,6 @@
     "@volar/typescript" "1.0.18"
     "@volar/vue-language-core" "1.0.18"
 
-"@vue-macros/api@~0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@vue-macros/api/-/api-0.2.1.tgz"
-  integrity sha512-5tbvjahcvu+LYnm0c6sB1Ax4KyUzl0kIv8nWBdE/PdQOru98ll5rjIxL/OWbpseSzfsqrHpRvZZK8dKDuZ34pQ==
-  dependencies:
-    "@babel/types" "^7.20.5"
-    "@vue-macros/common" "~0.13.5"
-
-"@vue-macros/better-define@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/better-define/-/better-define-1.1.1.tgz"
-  integrity sha512-f9HqwOHt1mmyoBzVUOKAQ+Z2zLxklPdm9FXjG6M8MAKhlwLgG9horTQKUs/oYce65OVf2c8BpDu+0Y91EIG1rw==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/api" "~0.2.1"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/common@0.13.5", "@vue-macros/common@~0.13.5":
-  version "0.13.5"
-  resolved "https://registry.npmjs.org/@vue-macros/common/-/common-0.13.5.tgz"
-  integrity sha512-i8BqdPsc+CR9p9KqwGi7QLmLkT+E1rN6qdw5wYI6BIdrayjyxCCoKyRsCoxA2gooZ1UCW75yknmc89zg8yco+w==
-  dependencies:
-    "@babel/types" "^7.20.5"
-    "@vue/compiler-sfc" "^3.2.45"
-    local-pkg "^0.4.2"
-    magic-string "^0.27.0"
-
-"@vue-macros/define-model@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/define-model/-/define-model-1.1.1.tgz"
-  integrity sha512-P9kY0s68sH4LxD9ziyqSzO2d2soQcM2467rFMQNJtmvwkhEGWZ8Z2P8RsV96km9R4laQMHiQGq5S6j58/b0drg==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    ast-walker-scope "^0.3.1"
-    unplugin "^1.0.1"
-
-"@vue-macros/define-props@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/define-props/-/define-props-0.1.1.tgz"
-  integrity sha512-IZY7+Q90Ja4CQQYaBTXNgIvqfKGFmcjg4Q3EFf9gN6Z9wGGfpzSe1IVOMlWr07rPFynRRGwJAHFoId8xD3hyFQ==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/define-render@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/define-render/-/define-render-1.1.1.tgz"
-  integrity sha512-BvUVzA3xaqaNX9/++EV+ksBD6c1RjybuRPi2AKmOZ5SrQjDDVuiUSQjRwpzeLj9XQM5fGBun0AOp3bs7z+rEXA==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/define-slots@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/define-slots/-/define-slots-0.1.1.tgz"
-  integrity sha512-5eTNhcuhiuQhc6fZPDe4RfvhMQQw4AgARn7GNhx6QyLnROwzWVyVKo4YdgKnimv5CO4jcmfEdv6kDEwLDt7zOw==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/hoist-static@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/hoist-static/-/hoist-static-1.1.1.tgz"
-  integrity sha512-K+MZG/UFPYHdipEr+hDcrOFMQhMy7STu2d/C2ytsLImsfovo3YPGejrG97EfB7ed8WWfXRY1X1ORyyRHa6XKsQ==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/named-template@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/named-template/-/named-template-0.1.1.tgz"
-  integrity sha512-nc7lk2sxaShbT1xLspiN0w/S5P6jOS/VFuVQ4tEjl2A/qOYmY/VRbMQXmImEwTEJXB6fI7D80CEF3xhBiG0nug==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    "@vue/compiler-dom" "^3.2.45"
-    unplugin "^1.0.1"
-
-"@vue-macros/reactivity-transform-vue2@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/@vue-macros/reactivity-transform-vue2/-/reactivity-transform-vue2-0.0.2.tgz"
-  integrity sha512-MeMACJtDJyhqD29e49I54HWcwIW08hl0RQTOzb9CKgORruFaG2xVAGSZSDL8yteE4qyXkLQh0fe2gKLzAzyoBw==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    "@vue/reactivity-transform" "^3.2.45"
-    unplugin "^1.0.1"
-
-"@vue-macros/setup-block@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/@vue-macros/setup-block/-/setup-block-0.0.2.tgz"
-  integrity sha512-kQFbSaw4W2DgPIXcsLMBEpqlknRrh6PT3+Ce2lstrVb3r7uMK4fDjiziLkP9ns7gVjKj+1FBluwuePBJOSSI+A==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    "@vue/compiler-dom" "^3.2.45"
-    unplugin "^1.0.1"
-
-"@vue-macros/setup-component@0.13.1":
-  version "0.13.1"
-  resolved "https://registry.npmjs.org/@vue-macros/setup-component/-/setup-component-0.13.1.tgz"
-  integrity sha512-zuMZQ1r8tVeL0FG3cLIazBAaO6UWYBCR7kvLVcspOx6tZyE+Lz0P4Tmb5kvqBIIIqUqn0uLtEzXRj1SzHKWbEg==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/setup-sfc@0.13.1":
-  version "0.13.1"
-  resolved "https://registry.npmjs.org/@vue-macros/setup-sfc/-/setup-sfc-0.13.1.tgz"
-  integrity sha512-EnDnG1ob6tFfK6cih+qUFzMNnEerwM9PgxHMbgbVNQsoYCh0wAxPu8djdMvVOm+fz7Gg27Lv6MXQCs14tXwAJQ==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
-"@vue-macros/short-emits@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@vue-macros/short-emits/-/short-emits-1.1.1.tgz"
-  integrity sha512-wbEtAl/dQnqyWVRrl0b+GcofNrZqbxYNHKJxdoMZw2YPcumZswVUjARwhdp6sswTbxJPkMKz3ekjxKSuBWnL6g==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    unplugin "^1.0.1"
-
 "@vue/babel-helper-vue-transform-on@^1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@vue/babel-helper-vue-transform-on/-/babel-helper-vue-transform-on-1.0.2.tgz"
@@ -1658,7 +1527,7 @@
   resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.4.5.tgz"
   integrity sha512-JD5fcdIuFxU4fQyXUu3w2KpAJHzTVdN+p4iOX2lMWSHMOoQdMAcpFLZzm9Z/2nmsoZ1a96QEhZ26e50xLBsgOQ==
 
-"@vue/reactivity-transform@3.2.45", "@vue/reactivity-transform@^3.2.45":
+"@vue/reactivity-transform@3.2.45":
   version "3.2.45"
   resolved "https://registry.npmjs.org/@vue/reactivity-transform/-/reactivity-transform-3.2.45.tgz"
   integrity sha512-BHVmzYAvM7vcU5WmuYqXpwaBHjsS8T63jlKGWVtHxAHIoMIlmaMyurUSEs1Zcg46M4AYT5MtB1U274/2aNzjJQ==
@@ -1835,6 +1704,18 @@ aos@^3.0.0-beta.6:
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
 
+apexcharts@^3.36.3:
+  version "3.36.3"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.36.3.tgz#debd58ded07163d51e00aeb15827d594e0cc8129"
+  integrity sha512-8/FXEs0ohXMff07Gv28XjhPwEJphIUdq2/wii/pcvi54Tw6z1mjrV8ydN8rlWi/ve8BAPBefJkLmRWv7UOBsLw==
+  dependencies:
+    svg.draggable.js "^2.2.2"
+    svg.easing.js "^2.0.0"
+    svg.filter.js "^2.0.2"
+    svg.pathmorphing.js "^0.1.3"
+    svg.resize.js "^1.4.3"
+    svg.select.js "^3.0.1"
+
 arg@^5.0.1, arg@^5.0.2:
   version "5.0.2"
   resolved "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz"
@@ -1844,14 +1725,6 @@ argparse@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
-
-ast-walker-scope@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/ast-walker-scope/-/ast-walker-scope-0.3.1.tgz"
-  integrity sha512-c+tWaEoA+b4yJp0NUI8/hYKUv1ELqpCMU/fogGazXxu7EXlry37q1wdfhaQqVmQn4l4agMeo4ek76LyKFIxkKA==
-  dependencies:
-    "@babel/parser" "^7.20.5"
-    "@babel/types" "^7.20.5"
 
 async@^3.2.3:
   version "3.2.4"
@@ -3801,6 +3674,61 @@ svg-tags@^1.0.0:
   resolved "https://registry.npmjs.org/svg-tags/-/svg-tags-1.0.0.tgz"
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
+svg.draggable.js@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/svg.draggable.js/-/svg.draggable.js-2.2.2.tgz#c514a2f1405efb6f0263e7958f5b68fce50603ba"
+  integrity sha512-JzNHBc2fLQMzYCZ90KZHN2ohXL0BQJGQimK1kGk6AvSeibuKcIdDX9Kr0dT9+UJ5O8nYA0RB839Lhvk4CY4MZw==
+  dependencies:
+    svg.js "^2.0.1"
+
+svg.easing.js@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/svg.easing.js/-/svg.easing.js-2.0.0.tgz#8aa9946b0a8e27857a5c40a10eba4091e5691f12"
+  integrity sha512-//ctPdJMGy22YoYGV+3HEfHbm6/69LJUTAqI2/5qBvaNHZ9uUFVC82B0Pl299HzgH13rKrBgi4+XyXXyVWWthA==
+  dependencies:
+    svg.js ">=2.3.x"
+
+svg.filter.js@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/svg.filter.js/-/svg.filter.js-2.0.2.tgz#91008e151389dd9230779fcbe6e2c9a362d1c203"
+  integrity sha512-xkGBwU+dKBzqg5PtilaTb0EYPqPfJ9Q6saVldX+5vCRy31P6TlRCP3U9NxH3HEufkKkpNgdTLBJnmhDHeTqAkw==
+  dependencies:
+    svg.js "^2.2.5"
+
+svg.js@>=2.3.x, svg.js@^2.0.1, svg.js@^2.2.5, svg.js@^2.4.0, svg.js@^2.6.5:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/svg.js/-/svg.js-2.7.1.tgz#eb977ed4737001eab859949b4a398ee1bb79948d"
+  integrity sha512-ycbxpizEQktk3FYvn/8BH+6/EuWXg7ZpQREJvgacqn46gIddG24tNNe4Son6omdXCnSOaApnpZw6MPCBA1dODA==
+
+svg.pathmorphing.js@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/svg.pathmorphing.js/-/svg.pathmorphing.js-0.1.3.tgz#c25718a1cc7c36e852ecabc380e758ac09bb2b65"
+  integrity sha512-49HWI9X4XQR/JG1qXkSDV8xViuTLIWm/B/7YuQELV5KMOPtXjiwH4XPJvr/ghEDibmLQ9Oc22dpWpG0vUDDNww==
+  dependencies:
+    svg.js "^2.4.0"
+
+svg.resize.js@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/svg.resize.js/-/svg.resize.js-1.4.3.tgz#885abd248e0cd205b36b973c4b578b9a36f23332"
+  integrity sha512-9k5sXJuPKp+mVzXNvxz7U0uC9oVMQrrf7cFsETznzUDDm0x8+77dtZkWdMfRlmbkEEYvUn9btKuZ3n41oNA+uw==
+  dependencies:
+    svg.js "^2.6.5"
+    svg.select.js "^2.1.2"
+
+svg.select.js@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/svg.select.js/-/svg.select.js-2.1.2.tgz#e41ce13b1acff43a7441f9f8be87a2319c87be73"
+  integrity sha512-tH6ABEyJsAOVAhwcCjF8mw4crjXSI1aa7j2VQR8ZuJ37H2MBUbyeqYr5nEO7sSN3cy9AR9DUwNg0t/962HlDbQ==
+  dependencies:
+    svg.js "^2.2.5"
+
+svg.select.js@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/svg.select.js/-/svg.select.js-3.0.1.tgz#a4198e359f3825739226415f82176a90ea5cc917"
+  integrity sha512-h5IS/hKkuVCbKSieR9uQCj9w+zLHoPh+ce19bBYyqF53g6mnPB8sAtIbe1s9dh2S2fCmYX2xel1Ln3PJBbK4kw==
+  dependencies:
+    svg.js "^2.6.5"
+
 tailwindcss@^3.2.4:
   version "3.2.4"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.4.tgz"
@@ -4004,14 +3932,6 @@ unplugin-auto-import@^0.12.1:
     unimport "^1.0.2"
     unplugin "^1.0.1"
 
-unplugin-combine@^0.5.2:
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/unplugin-combine/-/unplugin-combine-0.5.3.tgz"
-  integrity sha512-N3SCmDLOF/ea4dcqLlewNfKBQgBw5asucpsk04eiTdsUrzEvn1vb4Y8bScJ+qD22/rQoZvg64yHjMoai83zCEA==
-  dependencies:
-    "@antfu/utils" "^0.7.2"
-    unplugin "^1.0.1"
-
 unplugin-icons@^0.14.15:
   version "0.14.15"
   resolved "https://registry.yarnpkg.com/unplugin-icons/-/unplugin-icons-0.14.15.tgz#535605e25a34c6613888dca2094caf6ce2a5907c"
@@ -4040,38 +3960,6 @@ unplugin-vue-components@^0.22.12:
     minimatch "^5.1.1"
     resolve "^1.22.1"
     unplugin "^1.0.1"
-
-unplugin-vue-define-options@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/unplugin-vue-define-options/-/unplugin-vue-define-options-1.1.1.tgz"
-  integrity sha512-E9xCSAQgiGMRaQXBWw7KwXiisPwqO/NfV06TpzEb884U77nlOaSQg1TGxw5YoXMcn1Wu/+bmGyR6V9nIIlLEgQ==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/common" "~0.13.5"
-    ast-walker-scope "^0.3.1"
-    unplugin "^1.0.1"
-
-unplugin-vue-macros@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/unplugin-vue-macros/-/unplugin-vue-macros-1.2.1.tgz"
-  integrity sha512-taMZ8+W74kmHn9evLH8aAkcY94PyEs9HLySf6tm3cQlJEde4/5JHlMfkQbUswEKMmMnH1YjEKpBCxwcUMAe/EA==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    "@vue-macros/better-define" "1.1.1"
-    "@vue-macros/common" "0.13.5"
-    "@vue-macros/define-model" "1.1.1"
-    "@vue-macros/define-props" "0.1.1"
-    "@vue-macros/define-render" "1.1.1"
-    "@vue-macros/define-slots" "0.1.1"
-    "@vue-macros/hoist-static" "1.1.1"
-    "@vue-macros/named-template" "0.1.1"
-    "@vue-macros/reactivity-transform-vue2" "0.0.2"
-    "@vue-macros/setup-block" "0.0.2"
-    "@vue-macros/setup-component" "0.13.1"
-    "@vue-macros/setup-sfc" "0.13.1"
-    "@vue-macros/short-emits" "1.1.1"
-    unplugin-combine "^0.5.2"
-    unplugin-vue-define-options "1.1.1"
 
 unplugin@^1.0.0, unplugin@^1.0.1:
   version "1.0.1"
@@ -4218,6 +4106,11 @@ vue-tsc@^1.0.11:
   dependencies:
     "@volar/vue-language-core" "1.0.18"
     "@volar/vue-typescript" "1.0.18"
+
+vue3-apexcharts@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/vue3-apexcharts/-/vue3-apexcharts-1.4.1.tgz#ea561308430a1c5213b7f17c44ba3c845f6c490d"
+  integrity sha512-96qP8JDqB9vwU7bkG5nVU+E0UGQn7yYQVqUUCLQMYWDuQyu2vE77H/UFZ1yI+hwzlSTBKT9BqnNG8JsFegB3eg==
 
 vue3-lazy@^1.0.0-alpha.1:
   version "1.0.0-alpha.1"

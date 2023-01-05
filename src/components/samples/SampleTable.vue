@@ -1,12 +1,17 @@
 <template>
-  <BaseTable :headers="headers" :data="items" />
+  <BaseTable :headers="headers" :data="items">
+    <template #subject="item">
+      {{ truncateText(item.subject, 50) }}
+    </template>
+  </BaseTable>
 </template>
 
 <script setup lang="ts">
+const { truncateText } = useTruncate()
 const headers = reactive<object>({
   from: 'From',
   subject: 'Subject',
-  received: 'Received',
+  received: 'Received'
 })
 const items = ref<
   {
@@ -52,9 +57,6 @@ const items = ref<
     checked: false
   }
 ])
-
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

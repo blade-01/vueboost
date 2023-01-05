@@ -1,9 +1,9 @@
 <template>
   <header
-    class="header flex items-center main fixed w-full h-[78px] top-0 left-0 z-50 shadow-sm bg-white"
+    class="flex items-center main fixed w-full h-[78px] top-0 left-0 z-50 shadow-sm bg-white"
   >
     <div class="container">
-      <div class="header-content flex justify-between items-center w-full">
+      <div class="flex justify-between items-center w-full">
         <router-link to="/">
           <img
             src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png"
@@ -41,9 +41,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import { useRouter } from 'vue-router'
-
 const routes: {
   name: string
   routePath: string

@@ -5,7 +5,7 @@
         <div class="flex items-center gap-2">
           <span
             class="mdi mdi-menu text-3xl font-bold cursor-pointer"
-            @click="toggleSidebar"
+            @click="$emit('toggleSidebar')"
           ></span>
           <p>Dashboard</p>
         </div>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-const { toggleSidebar } = useMainStore()
+defineEmits(['toggleSidebar'])
 </script>
 
 <style scoped></style>

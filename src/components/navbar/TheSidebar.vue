@@ -1,5 +1,5 @@
 <template>
-  <div :class="[activeSidebar ? 'active-sidebar' : 'sidebar']" id="sidebar">
+  <div class="sidebar" :class="{ 'active-sidebar': nav }">
     <div>
       <div
         class="sticky-top bg-gray-100 w-full h-[60px] shadow-sm p-4 flex justify-between items-center"
@@ -16,9 +16,9 @@
       <div class="h-screen md:h-[calc(100vh-60px)] py-6 px-4 overflow-y-auto">
         <ul class="flex flex-col gap-y-3">
           <li v-for="(link, index) in links" :key="index">
-            <span class="text-2xl font-semibold block pb-4">{{ link.title }}</span>
+            <p class="text-2xl font-semibold pb-4">{{ link.title }}</p>
             <span v-for="(list, index) in link.list" :key="index">
-              <span v-if="!list.sub" class="block pb-2">
+              <span v-if="!list.sub" class="pb-2">
                 <RouterLink
                   :to="`${list.route}`"
                   active-class="sidebar-active"
@@ -56,7 +56,7 @@
                   ]"
                 >
                   <div v-for="(sub, index) in list.sub" :key="index">
-                    <span class="block pl-[37px] pb-1.5">
+                    <p class="pl-[37px] pb-1.5">
                       <RouterLink
                         :to="`${sub.route}`"
                         active-class="sidebar-active"
@@ -64,7 +64,7 @@
                       >
                         <span class="font-light">{{ sub.name }}</span>
                       </RouterLink>
-                    </span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -79,22 +79,22 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 const { links, activeSidebar, toggleDropdown } = useMainStore()
+defineProps<{ nav: boolean }>()
 </script>
 
 <style scoped>
 .sidebar {
-  @apply bg-gray-200 shadow-sm z-40 w-[260px] fixed top-0 md:left-0  -left-full transition-[left] duration-300 ease-in-out;
+  @apply bg-gray-200 shadow-sm z-40 w-[260px] fixed top-0 md:left-0  -left-full transition-[left];
 }
 
+.active-sidebar {
+  @apply left-0 w-[260px] md:-left-full;
+}
 .sidebar-active {
   @apply bg-priText rounded-md text-white hover:bg-priText !important;
 }
 
 .sidebar-hover {
   @apply p-3 transition-all ease-in-out duration-300 hover:bg-[#00000042] hover:text-white hover:rounded-md cursor-pointer;
-}
-
-.active-sidebar {
-  @apply left-0 md:-left-full;
 }
 </style>

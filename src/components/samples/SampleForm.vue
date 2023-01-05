@@ -56,7 +56,7 @@
       <BasePhone
         class="md:col-span-2"
         v-model="state.phoneNumber"
-        label="Phone Number II"
+        label="Phone Number"
         :placeholder="'Phone Number'"
         :error="v$.phoneNumber.$error"
         @blur="v$.phoneNumber.$touch()"

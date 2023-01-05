@@ -69,16 +69,7 @@ export const useMainStore = defineStore('main', () => {
   const toggleError = (value: boolean): any => {};
 
   const toggleDropdown = (item: any): void => {
-    // links.value.forEach((link) =>
-    //   link.list?.forEach((list) => (list.show = false))
-    // );
     item.show = !item.show;
-    // if (item.show === true) {
-    //   item.show = false;
-    // } else {
-    //   item.show = true;
-    // }
-    // console.log(item.show);
   };
 
   const toggleSidebar = (): void => {

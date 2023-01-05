@@ -5,7 +5,7 @@
 @layer base {
   /* CONFIG STYLE */
   body {
-    @apply font-inter text-base font-normal text-[#213547] dark:text-white bg-white dark:bg-primary transition-all duration-500 ease-in-out;
+    @apply font-inter text-base font-normal text-[#213547] dark:text-white bg-white dark:bg-primary transition-all duration-500 ease-in-out m-0 p-0;
   }
 
   html {
@@ -162,8 +162,15 @@
   .submit-btn {
     @apply bg-transparent border border-white text-white rounded-md p-4 font-semibold btn w-full md:basis-[30%] cursor-pointer mt-4 md:mt-0;
   }
+}
 
-  /* VUE TRANSITIONS*/
+@layer utilities {
+  /* NAVIGATION TOGGLER */
+  .open-navbar {
+    @apply left-0 lg:left-0 transition-[left] duration-500 ease-in-out;
+  }
+
+  /* VUE TRANSITIONS */
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity ease-in-out 0.3s;
@@ -182,12 +189,5 @@
   .zoom-enter-from,
   .zoom-leave-to {
     transform: scale(0);
-  }
-}
-
-@layer utilities {
-  /* NAVIGATION TOGGLER */
-  .open-navbar {
-    @apply left-0 lg:left-0 transition-[left] duration-500 ease-in-out;
   }
 }

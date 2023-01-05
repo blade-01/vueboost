@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     BaseTable: typeof import('./components/reusables/BaseTable.vue')['default']
     BaseTableAction: typeof import('./components/reusables/BaseTableAction.vue')['default']
     BaseTextarea: typeof import('./components/reusables/BaseTextarea.vue')['default']
+    DashboardLayout: typeof import('./components/dashboard/DashboardLayout.vue')['default']
     HomeCTA: typeof import('./components/home/HomeCTA.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
@@ -25,5 +26,7 @@ declare module '@vue/runtime-core' {
     SampleTable: typeof import('./components/samples/SampleTable.vue')['default']
     TheFooter: typeof import('./components/navbar/TheFooter.vue')['default']
     TheHeader: typeof import('./components/navbar/TheHeader.vue')['default']
+    TheSidebar: typeof import('./components/navbar/TheSidebar.vue')['default']
+    TheTopbar: typeof import('./components/navbar/TheTopbar.vue')['default']
   }
 }

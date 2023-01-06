@@ -50,6 +50,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'V Dashboard'
+})
 const metrics: { count: number; title: string }[] = [
   {
     count: 400,

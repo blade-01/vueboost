@@ -2,6 +2,12 @@
   <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>-->
 
+<p align='center'>V</p>
+
+<hr/>
+
+<br/>
+
 <p align='center'>
 Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 </p>
@@ -35,7 +41,7 @@ Boost your productivity with our tool - work smarter, not harder.
 
 - 🎨 [TailwindCSS](https://tailwindcss.com/)
 
-- 😃 [Use icons from material design icons - MDI](https://materialdesignicons.com/)
+- 😃 [Use icons from Iconify](https://iconify.design)
 
 - 🌍 [I18n ready](./locales)
 
@@ -78,7 +84,7 @@ Boost your productivity with our tool - work smarter, not harder.
   - [Table](/src/components/reusables/BaseTable.vue) - Data table component
   - [Table Action](/src/components/reusables/BaseTableAction.vue) - Table Action component (view, edit and delete)
 - [Samples Folder](/src/components/samples/)
-  - You can find how to use these components in the [Samples](/src/components/samples/) folder
+  - You can find out how to use these components in the [Samples](/src/components/samples/) folder or visit [V Dashboard](https:/v.vercel.app/dashboard) for the visualization
 
 
 
@@ -103,6 +109,7 @@ Boost your productivity with our tool - work smarter, not harder.
 - [Vue-tel-input](https://vue-tel-input.iamstevendao.com/) - mobile number validation library for Vue
 - [Vue3 Lazy](https://github.com/liangyuanchai/vue3-plugin-lazy) - image lazy/skeleton loader for Vue
 - [Vue3 Quill Editor](https://vueup.github.io/vue-quill/) - text rich editor for vue
+- [Vue3 Apexcharts](https://github.com/apexcharts/vue3-apexcharts) - Vue 3 component for ApexCharts to build interactive visualizations in vue.
 
 ### Coding Style
 
@@ -177,7 +184,7 @@ OR
 yarn build
 ```
 
-And you will see the generated file in `dist` that ready to be served.
+And you will see the generated file in `dist` that is ready to be served.
 
 ### Deploy
 

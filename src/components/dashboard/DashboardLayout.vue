@@ -4,7 +4,7 @@
     <main class="sidebar-wrapper" :class="{ 'active-mainbar': nav }">
       <div class="relative">
         <TheTopbar @toggle-sidebar="toggleSidebar" :title="title" />
-        <div class="p-8">
+        <div class="p-4">
           <slot></slot>
         </div>
       </div>

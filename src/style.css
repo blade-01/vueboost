@@ -162,6 +162,15 @@
   .submit-btn {
     @apply bg-transparent border border-white text-white rounded-md p-4 font-semibold btn w-full md:basis-[30%] cursor-pointer mt-4 md:mt-0;
   }
+
+  /* CHART TITLE */
+  .chart-bar {
+    @apply rounded-sm border border-primary p-4 mb-3 bg-white;
+  }
+
+  .chart-title {
+    @apply uppercase mb-3 font-medium text-sm;
+  }
 }
 
 @layer utilities {

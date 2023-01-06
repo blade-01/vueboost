@@ -30,6 +30,9 @@ import 'vue-toastification/dist/index.css';
 import { QuillEditor } from '@vueup/vue-quill';
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
 
+// Vue Apex Charts
+import VueApexCharts from 'vue3-apexcharts';
+
 const pinia = createPinia();
 
 const head = createHead();
@@ -61,6 +64,7 @@ app
   })
   .use(Toast, options)
   .use(head)
+  .use(VueApexCharts)
   .component('vue-tel-input', VueTelInput)
   .component('QuillEditor', QuillEditor)
   .mount('#app');

@@ -1,26 +1,23 @@
 <template>
   <Teleport to="body">
     <Transition name="zoom">
-    <div
-      class="fixed top-0 left-0 w-screen h-screen bg-[rgb(0,0,0,0.1)] flex justify-center items-center z-20"
-      @click.self="toggleModal(false)"
-      v-if="isActive"
-    >
       <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl bg-white py-8 px-6 w-11/12 md:w-[360px] flex justify-center items-center text-center flex-col rounded-lg"
+        class="fixed top-0 left-0 w-screen h-screen bg-[rgb(0,0,0,0.1)] flex justify-center items-center z-20"
+        @click.self="toggleModal"
+        v-if="isActive"
       >
-        <slot></slot>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl bg-white py-8 px-6 w-11/12 md:w-[360px] flex justify-center items-center text-center flex-col rounded-lg"
+        >
+          <slot></slot>
+        </div>
       </div>
-    </div>
-  </Transition>
+    </Transition>
   </Teleport>
 </template>
 
 <script setup lang="ts">
-const isActive = false;
-const toggleModal = (value: boolean): void => {
-  console.log(value)
-}
+const { isActive, toggleModal } = useModal()
 </script>
 
 <style scoped>

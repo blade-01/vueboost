@@ -1,16 +1,9 @@
 <template>
   <footer class="flex gap-3.5 items-center">
-    <RouterLink to="/"
-      ><Icon icon="mdi:home" width="23" class="link"
-    /></RouterLink>
-    <div @click="switchTheme" class="transition-all ease-linear duration-300">
-      <Icon
-        icon="mdi:weather-sunny"
-        width="23"
-        v-if="colorMode === 'light'"
-        class="link"
-      />
-      <Icon icon="mdi:weather-night" width="23" v-else class="link" />
+    <RouterLink to="/"><Icon icon="mdi:home" width="23" class="link" /></RouterLink>
+    <div @click="toggleDark()" class="transition-all ease-linear duration-300">
+      <Icon icon="mdi:weather-night" width="23" v-if="isDark" class="link" />
+      <Icon icon="mdi:weather-sunny" width="23" v-else class="link" />
     </div>
     <Icon icon="mdi:translate" width="23" class="link" @click="toggleLocales" />
     <RouterLink to="/about"
@@ -33,7 +26,6 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-const { colorMode, switchTheme } = useThemeSwitch()
 const { t, availableLocales, locale } = useI18n()
 const toggleLocales = () => {
   // change to some real logic

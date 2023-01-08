@@ -1,7 +1,22 @@
 <template>
   <header class="flex flex-col justify-center items-center text-center">
     <div class="flex flex-col justify-center items-center text-center">
-      <img src="/vueboost.svg" class="w-[80px] h-[80px] object-contain" />
+      <img
+        v-lazy="
+          'https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg'
+        "
+        alt="logo"
+        class="w-[80px] h-[80px] object-contain"
+        v-if="isDark"
+      />
+      <img
+        v-lazy="
+          'https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg'
+        "
+        alt="logo"
+        class="w-[80px] h-[80px] object-contain"
+        v-else
+      />
       <div class="text-base font-medium">Vue Boost</div>
     </div>
     <p class="text-sm font-light italic mt-2">{{ $t('title') }}</p>

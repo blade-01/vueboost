@@ -1,5 +1,5 @@
 <template>
-  <!-- Base Phone - WIP -->
+  <!-- Base Phone -->
   <div class="md:col-span-2">
     <label class="label-style" :for="label" v-if="label">{{ label }}</label>
     <vue-tel-input

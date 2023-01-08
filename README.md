@@ -131,14 +131,14 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/blade-01/VUE_TS_TEMPLATE/generate).
+[Create a repo from this template on GitHub](https://github.com/blade-01/V/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit blade-01/VUE_TS_TEMPLATE my-template
+npx degit blade-01/V my-template
 cd my-template
 pnpm i or yarn i # If you don't have pnpm installed, run: npm install -g pnpm
 ```

@@ -68,7 +68,7 @@
   }
 
   .input-style {
-    @apply bg-transparent border-solid border-gray-300 border outline-none rounded-[4px] h-[42px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-[4px] disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:font-light placeholder:text-[#213547] dark:placeholder:text-primary !important;
+    @apply bg-transparent border-solid border-gray-300 border outline-none rounded-[4px] h-[42px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-[4px] disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:font-light placeholder:text-[#213547] dark:placeholder:text-[#d8d8d8] !important;
   }
 
   .input-style.textarea-style {

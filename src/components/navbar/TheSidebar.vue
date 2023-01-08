@@ -6,7 +6,7 @@
       >
         <router-link to="/">
           <img
-            v-lazy="'https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png'"
+            v-lazy="'https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg'"
             alt="logo"
             class="w-[50px] object-contain"
           />

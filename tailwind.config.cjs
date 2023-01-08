@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
       },
       fontSize: {
         nl: ["56px", "64px"],

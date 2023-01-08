@@ -9,13 +9,13 @@
 <br/>
 
 <p align='center'>
-Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
+Boost your productivity with V - work smarter, not harder.
 </p>
 
 <br>
 
 <p align='center'>
-Boost your productivity with our tool - work smarter, not harder.
+Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 </p>
 
 <br>

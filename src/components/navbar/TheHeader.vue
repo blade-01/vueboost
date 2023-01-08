@@ -1,6 +1,6 @@
 <template>
   <header class="flex flex-col justify-center items-center text-center">
-    <Icon icon="mdi:github" width="70" />
+    <Icon icon="mdi:home-battery-outline" width="70" />
     <p class="text-sm font-light mt-3">{{ $t('title') }}</p>
   </header>
 </template>

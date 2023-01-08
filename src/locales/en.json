@@ -2,5 +2,6 @@
   "title": "Boost your productivity with V",
   "go": "go",
   "back": "back",
-  "placeholder": "What's your name?"
+  "placeholder": "What's your name?",
+  "dynamic": "Demo of dynamic route"
 }

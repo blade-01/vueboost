@@ -1,8 +1,8 @@
-<!--<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>-->
-
-<p align='center'>VueBoost</p>
+<p align='center'>
+  <img src='https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg' alt='Boost your productivity with Vue Boost - work smarter, not harder.' width='150'/>
+</p>
+<br/>
+<p align='center' style="font-size:20px;font-weight:900;">Vue Boost</p>
 
 <hr/>
 
@@ -25,7 +25,6 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 </p>
 
 <br>
-
 
 ## Features
 
@@ -53,10 +52,7 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 
 - 🦾 TypeScript, of course
 
-
-
 <br>
-
 
 ## Pre-packed
 
@@ -85,8 +81,6 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
   - [Table Action](/src/components/reusables/BaseTableAction.vue) - Table Action component (view, edit and delete)
 - [Samples Folder](/src/components/samples/)
   - You can find out how to use these components in the [Samples](/src/components/samples/) folder or visit [Vue Boost Dashboard](https://vueboost.vercel.app/dashboard) for the visualization
-
-
 
 ### Plugins
 
@@ -178,6 +172,7 @@ To build the App, run
 ```bash
 pnpm build
 ```
+
 OR
 
 ```bash

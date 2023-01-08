@@ -13,10 +13,10 @@ useHead({
       <h1 class="text-center font-medium text-2xl">About</h1>
       <p class="font-light max-w-[600px] text-left">
         <a
-          href="https://github.com/blade-01/V"
+          href="https://github.com/blade-01/vueboost"
           target="_blank"
           class="underline font-light"
-          >!Vitesse</a
+          >Vue Boost</a
         >
         is an opinionated
         <a
@@ -48,7 +48,7 @@ useHead({
 
         Checkout the
         <a
-          href="https://github.com/blade-01/V"
+          href="https://github.com/blade-01/vueboost"
           target="_blank"
           class="underline font-light"
           >GitHub repo</a

@@ -2,14 +2,14 @@
   <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
 </p>-->
 
-<p align='center'>V</p>
+<p align='center'>VueBoost</p>
 
 <hr/>
 
 <br/>
 
 <p align='center'>
-Boost your productivity with V - work smarter, not harder.
+Boost your productivity with Vue Boost - work smarter, not harder.
 </p>
 
 <br>
@@ -21,7 +21,7 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 <br>
 
 <p align='center'>
-<a href="https://v.vercel.app/">Live Demo</a>
+<a href="https://vueboost.vercel.app/">Live Demo</a>
 </p>
 
 <br>
@@ -84,7 +84,7 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
   - [Table](/src/components/reusables/BaseTable.vue) - Data table component
   - [Table Action](/src/components/reusables/BaseTableAction.vue) - Table Action component (view, edit and delete)
 - [Samples Folder](/src/components/samples/)
-  - You can find out how to use these components in the [Samples](/src/components/samples/) folder or visit [V Dashboard](https:/v.vercel.app/dashboard) for the visualization
+  - You can find out how to use these components in the [Samples](/src/components/samples/) folder or visit [Vue Boost Dashboard](https://vueboost.vercel.app/dashboard) for the visualization
 
 
 
@@ -131,14 +131,14 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/blade-01/V/generate).
+[Create a repo from this template on GitHub](https://github.com/blade-01/vueboost/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit blade-01/V my-template
+npx degit blade-01/vueboost my-template
 cd my-template
 pnpm i or yarn i # If you don't have pnpm installed, run: npm install -g pnpm
 ```

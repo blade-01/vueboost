@@ -47,4 +47,14 @@ const handleValidation = ($event: Event): void => {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+:deep(.vue-tel-input) {
+  @apply border-solid border-gray-300 border outline-none rounded-[4px] h-[42px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-[4px] disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:capitalize;
+}
+:deep(.vti__dropdown-list) {
+  z-index: 10;
+}
+:deep(.vti__input) {
+  @apply bg-transparent;
+}
+</style>

@@ -71,4 +71,8 @@ watch(
 )
 </script>
 
-<style scoped></style>
+<style scoped>
+:deep(.ql-tooltip) {
+  display: none;
+}
+</style>

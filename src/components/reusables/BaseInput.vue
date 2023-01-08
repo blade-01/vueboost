@@ -7,6 +7,7 @@
         :id="label"
         :type="type"
         :value="modelValue"
+        :placeholder="placeholder"
         v-bind="$attrs"
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
         class="input-style"

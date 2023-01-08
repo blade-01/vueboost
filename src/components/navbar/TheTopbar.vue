@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center main sticky-top w-full h-[60px] z-50 shadow-sm bg-white">
+  <div class="flex items-center main sticky-top w-full h-[60px] z-50 shadow-sm bg-white dark:bg-darkBgSec">
     <div class="p-4 w-full">
       <div class="flex justify-between items-center w-full">
         <div class="flex items-center gap-2">

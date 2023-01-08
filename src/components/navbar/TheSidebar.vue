@@ -2,15 +2,14 @@
   <div class="sidebar" :class="{ 'active-sidebar': nav }">
     <div>
       <div
-        class="sticky-top bg-gray-100 w-full h-[60px] shadow-sm p-4 flex justify-between items-center"
+        class="sticky-top bg-gray-100 dark:bg-darkBgSec w-full h-[60px] shadow-sm p-4 flex justify-between items-center"
       >
-        <router-link to="/" class="flex items-center gap-2">
+        <router-link to="/">
           <img
             v-lazy="'https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png'"
             alt="logo"
             class="w-[50px] object-contain"
           />
-          <p class="text-4xl font-semibold">V</p>
         </router-link>
       </div>
       <div class="h-screen md:h-[calc(100vh-60px)] py-6 px-4 overflow-y-auto">
@@ -84,7 +83,7 @@ defineProps<{ nav: boolean }>()
 
 <style scoped>
 .sidebar {
-  @apply bg-gray-200 shadow-sm z-40 w-[260px] fixed top-0 md:left-0  -left-full transition-[left];
+  @apply bg-gray-200 dark:bg-darkBgSec shadow-sm z-40 w-[260px] fixed top-0 md:left-0  -left-full transition-[left];
 }
 
 .active-sidebar {

@@ -2,11 +2,11 @@
   <form @submit.prevent>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <BaseInput
-        label="Custom name"
+        label="Custom"
         v-model="state.username"
         type="text"
         :error="v$.username.$error"
-        error-message="Username is required"
+        error-message="Custom is required"
         @blur="v$.username.$touch()"
         @focus="v$.username.$reset()"
       />
@@ -161,11 +161,4 @@ const submitForm = () => {
 }
 </script>
 
-<style scoped>
-:deep(.vue-tel-input) {
-  @apply border-solid border-gray-300 border-2 outline-none rounded-xl h-[44px] flex items-center py-3 px-4 focus:border-gray-600 w-full transition-all duration-200 ease-in-out disabled:rounded-xl disabled:border disabled:border-gray-300 disabled:bg-gray-50 disabled:p-4 disabled:py-6 placeholder:capitalize;
-}
-:deep(.vti__dropdown-list) {
-  z-index: 10;
-}
-</style>
+<style scoped></style>

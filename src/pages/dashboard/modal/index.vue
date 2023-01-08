@@ -1,6 +1,6 @@
 <template>
-  <DashboardLayout title="Table Sample">
-    <SampleTable />
+  <DashboardLayout title="Modal Sample">
+    <SampleModal />
   </DashboardLayout>
 </template>
 

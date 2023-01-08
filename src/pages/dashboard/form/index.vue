@@ -1,5 +1,5 @@
 <template>
-  <DashboardLayout title="Form">
+  <DashboardLayout title="Form Sample">
     <SampleForm />
   </DashboardLayout>
 </template>

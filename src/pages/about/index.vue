@@ -1,17 +1,17 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 useHead({
-  title: 'About | About Vue-TS'
+  title: 'About | About V'
 })
 </script>
 
 <template>
-  <TheHeader />
   <div class="routes py-8">
     <div class="container">
-      <h1 class="text-center text-3xl font-bold my-12">Forms Usage</h1>
-      <SampleForm />
-      <SampleTable class="mt-5" />
+      <h1 class="text-center text-3xl font-bold my-12">About</h1>
+      <RouterLink to="/dashboard">
+        <Icon icon="mdi:view-dashboard" />
+      </RouterLink>
     </div>
   </div>
-  <TheFooter />
 </template>

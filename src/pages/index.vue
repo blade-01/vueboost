@@ -1,8 +1,9 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <TheHeader/>
-  <HomeCTA/>
-  <TheFooter/>
+  <div class="flex flex-col justify-center items-center gap-10 text-center h-screen px-4">
+    <TheHeader />
+    <HomeCTA />
+    <TheFooter />
+  </div>
 </template>

@@ -23,7 +23,7 @@ const toggleSidebar = () => {
 
 <style scoped>
 .sidebar-wrapper {
-  @apply bg-gray-50 h-screen overflow-y-auto w-full md:ml-[260px] md:w-[calc(100%-260px)] transition-[margin-left];
+  @apply bg-gray-50 dark:bg-darkBg h-screen overflow-y-auto w-full md:ml-[260px] md:w-[calc(100%-260px)] transition-[margin-left];
 }
 .active-mainbar {
   @apply ml-[260px] md:ml-0 md:w-full;

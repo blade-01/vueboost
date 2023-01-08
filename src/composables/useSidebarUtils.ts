@@ -48,10 +48,22 @@ export default () => {
       icon: 'mdi-puzzle',
       list: [
         {
+          name: 'Button',
+          icon: 'gesture-tap-button',
+          show: false,
+          route: '/dashboard/button'
+        },
+        {
           name: 'Forms',
           icon: 'form-select',
           show: false,
           route: '/dashboard/form'
+        },
+        {
+          name: 'Modal',
+          icon: 'card',
+          show: false,
+          route: '/dashboard/modal'
         },
         {
           name: 'Table',

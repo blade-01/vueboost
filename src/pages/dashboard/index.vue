@@ -9,7 +9,7 @@
           <p class="text-xl">{{ count }}</p>
           <p class="chart-title text-xl">{{ title }}</p>
         </div>
-        <span class="mdi mdi-chart-timeline-variant text-5xl font-semibold text-priText"></span>
+        <span class="mdi mdi-chart-timeline-variant text-5xl font-semibold text-[#344675] dark:text-primary"></span>
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3 gap-y-0.5">
@@ -50,6 +50,8 @@
 </template>
 
 <script setup lang="ts">
+import useCharts from '../../composables/useCharts';
+
 useHead({
   title: 'V Dashboard'
 })

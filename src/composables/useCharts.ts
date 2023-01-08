@@ -19,7 +19,7 @@ export default () => {
       offsetY: -20,
       style: {
         fontSize: '12px',
-        colors: ['#304758']
+        colors: ['#eef1f8']
       }
     },
     xaxis: {
@@ -35,8 +35,8 @@ export default () => {
         fill: {
           type: 'gradient',
           gradient: {
-            colorFrom: '#D8E3F0',
-            colorTo: '#BED1E6',
+            colorFrom: '#eef1f8',
+            colorTo: '#eef1f8',
             stops: [0, 100],
             opacityFrom: 0.4,
             opacityTo: 0.5
@@ -45,6 +45,18 @@ export default () => {
       },
       tooltip: {
         enabled: true
+      },
+      labels: {
+        style: {
+          colors: '#26A0FC'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          colors: '#26A0FC'
+        }
       }
     }
   };
@@ -60,8 +72,12 @@ export default () => {
     chart: {
       type: 'polarArea'
     },
+    style: {
+      fontSize: '12px',
+      colors: ['#eef1f8']
+    },
     stroke: {
-      colors: ['#fff']
+      colors: ['#eef1f8']
     },
     fill: {
       opacity: 0.8
@@ -141,7 +157,19 @@ export default () => {
         '2018-09-19T04:30:00.000Z',
         '2018-09-19T05:30:00.000Z',
         '2018-09-19T06:30:00.000Z'
-      ]
+      ],
+      labels: {
+        style: {
+          colors: '#26A0FC'
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          colors: '#26A0FC'
+        }
+      }
     },
     tooltip: {
       x: {

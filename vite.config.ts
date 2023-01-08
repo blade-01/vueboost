@@ -20,8 +20,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['vue.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'V',
-        short_name: 'V',
+        name: 'Vue Boost',
+        short_name: 'Vue Boost',
         theme_color: '#ffffff',
         icons: [
           {

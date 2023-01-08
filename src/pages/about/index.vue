@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 useHead({
-  title: 'About | About V'
+  title: 'About Vue Boost',
+  meta: [{ name: 'description', content: 'Boost your productivity with Vue Boost - work smarter, not harder.' }],
 })
 </script>
 

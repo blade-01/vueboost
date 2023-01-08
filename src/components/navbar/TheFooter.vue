@@ -1,5 +1,8 @@
 <template>
   <footer class="flex gap-3.5 items-center">
+    <RouterLink to="/"
+      ><Icon icon="mdi:home" width="23" class="link"
+    /></RouterLink>
     <div @click="switchTheme" class="transition-all ease-linear duration-300">
       <Icon
         icon="mdi:weather-sunny"
@@ -16,6 +19,15 @@
     <a href="https://github.com/blade-01" target="_blank"
       ><Icon icon="mdi:github" width="23" class="link"
     /></a>
+
+    <div class="absolute bottom-2 left-1/2 -translate-x-1/2">
+      <p class="font-light text-xs">
+        Inspired by
+        <a href="https://vitesse.netlify.app" target="_blank" class="text-blue-600"
+          >Vitesse</a
+        >
+      </p>
+    </div>
   </footer>
 </template>
 

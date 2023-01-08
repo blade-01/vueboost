@@ -6,12 +6,9 @@ useHead({
 </script>
 
 <template>
-  <div class="routes py-8">
-    <div class="container">
-      <h1 class="text-center text-3xl font-bold my-12">About</h1>
-      <RouterLink to="/dashboard">
-        <Icon icon="mdi:view-dashboard" />
-      </RouterLink>
-    </div>
+  <div class="flex flex-col justify-center items-center gap-10 text-center h-screen px-4">
+    <Icon icon="mdi:run" width="70" />
+    <h1 class="text-center text-3xl font-bold my-12">About V</h1>
+    <TheFooter />
   </div>
 </template>

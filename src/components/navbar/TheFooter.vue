@@ -9,7 +9,7 @@
     <RouterLink to="/about"
       ><Icon icon="mdi:information-outline" width="23" class="link"
     /></RouterLink>
-    <a href="https://github.com/blade-01" target="_blank"
+    <a href="https://github.com/blade-01/vueboost" target="_blank"
       ><Icon icon="mdi:github" width="23" class="link"
     /></a>
 

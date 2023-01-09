@@ -14,9 +14,9 @@
     /></a>
 
     <div class="absolute bottom-2 left-1/2 -translate-x-1/2">
-      <p class="font-light text-xs">
+      <p class="font-light text-sm">
         Inspired by
-        <a href="https://vitesse.netlify.app" target="_blank" class="text-blue-600"
+        <a href="https://vitesse.netlify.app" target="_blank" class="underline"
           >Vitesse</a
         >
       </p>

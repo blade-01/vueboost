@@ -11,7 +11,7 @@ useHead({
     <div class="flex flex-col gap-2 items-center text-center">
       <Icon icon="mdi:information-outline" width="70" />
       <h1 class="text-center font-medium text-2xl">About</h1>
-      <p class="font-light max-w-[600px] text-left">
+      <p class="font-light max-w-[780px] text-left text-lg">
         <a
           href="https://github.com/blade-01/vueboost"
           target="_blank"
@@ -57,7 +57,7 @@ useHead({
 
         <br /><br />
 
-        NB: To see the reusable components in action got to
+        <strong>NB:</strong> To see the reusable components in action go to
         <RouterLink to="/dashboard" class="underline font-light">dashboard</RouterLink>.
       </p>
     </div>

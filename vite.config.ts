@@ -16,21 +16,15 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      devOptions: {
-        enabled: true
-      }
-    }),
+    VitePWA({ injectRegister: 'auto' }),
     // VitePWA({
-    //   strategies: 'injectManifest',
-    //   registerType: 'autoUpdate',
+    //   // registerType: 'autoUpdate',
     //   devOptions: {
-    //     enabled: true
+    //     enabled: true,
+    //     type: 'module'
+    //     /* other options */
     //   },
     //   injectRegister: 'auto',
-    //   srcDir: 'src',
-    //   filename: 'sw.ts',
     //   workbox: {
     //     sourcemap: true,
     //     globPatterns: ['**/*.{js,css,html,ico,png,svg}']
@@ -59,7 +53,13 @@ export default defineConfig({
     //         purpose: 'any maskable'
     //       }
     //     ]
-    //   }
+    //   },
+    //   strategies: 'injectManifest',
+    //   injectManifest: {
+    //     rollupFormat: 'iife'
+    //   },
+    //   srcDir: 'src',
+    //   filename: 'sw.ts'
     // }),
     // https://github.com/webfansplz/vite-plugin-vue-inspector
     Inspector({

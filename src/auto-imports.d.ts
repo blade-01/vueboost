@@ -62,6 +62,7 @@ declare global {
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
+  const preferredDark: typeof import('./composables/useThemeSwitch')['preferredDark']
   const provide: typeof import('vue')['provide']
   const push: typeof import('./store/services')['push']
   const reactify: typeof import('@vueuse/core')['reactify']
@@ -343,6 +344,7 @@ declare module 'vue' {
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
     readonly pausableWatch: UnwrapRef<typeof import('@vueuse/core')['pausableWatch']>
+    readonly preferredDark: UnwrapRef<typeof import('./composables/useThemeSwitch')['preferredDark']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly push: UnwrapRef<typeof import('./store/services')['push']>
     readonly reactify: UnwrapRef<typeof import('@vueuse/core')['reactify']>

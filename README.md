@@ -2,14 +2,9 @@
   <img src='https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg' alt='Boost your productivity with Vue Boost - work smarter, not harder.' width='150'/>
 </p>
 <br/>
-<p align='center' style="font-size:20px;font-weight:900;">Vue Boost</p>
-
-<hr/>
-
-<br/>
 
 <p align='center'>
-Boost your productivity with Vue Boost - work smarter, not harder.
+Boost your productivity with <strong>Vue Boost</strong> - work smarter, not harder.
 </p>
 
 <br>

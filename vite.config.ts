@@ -18,7 +18,10 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      injectRegister: 'auto',
+      // devOptions: {
+      //   enabled: true
+      // },
+      // injectRegister: 'auto',
       // workbox: {
       //   sourcemap: true,
       //   globPatterns: ['**/*.{js,css,html,ico,png,svg}']

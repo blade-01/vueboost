@@ -18,20 +18,9 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      // devOptions: {
-      //   enabled: true
-      // },
-      // injectRegister: 'auto',
-      // workbox: {
-      //   sourcemap: true,
-      //   globPatterns: ['**/*.{js,css,html,ico,png,svg}']
-      // },
-      // strategies: 'injectManifest',
-      // injectManifest: {
-      //   rollupFormat: 'iife'
-      // },
-      // srcDir: 'src',
-      // filename: 'sw.ts',
+      devOptions: {
+        enabled: true
+      },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
         name: 'Vue Boost',

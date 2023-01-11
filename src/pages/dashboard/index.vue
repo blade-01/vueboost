@@ -53,7 +53,7 @@
 import useCharts from '../../composables/useCharts';
 
 useHead({
-  title: 'V Dashboard'
+  title: 'Dashboard | Welcome to Vue Boost Dashboard'
 })
 const metrics: { count: number; title: string }[] = [
   {

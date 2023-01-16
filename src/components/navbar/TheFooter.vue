@@ -17,8 +17,8 @@
     <aside class="text-center mt-5">
       <p class="font-light text-sm">
         Inspired by
-        <a href="https://vueboost.netlify.app" target="_blank" class="underline"
-          >Vue Boost</a
+        <a href="https://vitesse.netlify.app" target="_blank" class="underline"
+          >Vitesse</a
         >
       </p>
     </aside>

@@ -1,6 +1,6 @@
 <template>
   <button class="btn flex justify-center items-center">
-    <div v-if="isLoading"></div>
+    <div class="spinner-border animate-spin inline-block w-6 h-6 border-4 rounded-full" v-if="isLoading"></div>
     <span class="space-x-3" v-else>
       <span>{{ label }}</span>
       <span
@@ -12,9 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import { useMainStore } from '../../store/main'
-import { storeToRefs } from 'pinia'
-import { ref } from 'vue'
 const isLoading = ref(false)
 interface Props {
   label: string

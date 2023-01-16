@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg' alt='Boost your productivity with Vue Boost - work smarter, not harder.' width='150'/>
+  <img src='public/screenshot.png' alt='Boost your productivity with Vue Boost - work smarter, not harder.'/>
 </p>
 <br/>
 

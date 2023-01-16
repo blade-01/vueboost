@@ -2,14 +2,19 @@
 import { Icon } from '@iconify/vue'
 useHead({
   title: 'About Vue Boost',
-  meta: [{ name: 'description', content: 'Boost your productivity with Vue Boost - work smarter, not harder.' }],
+  meta: [
+    {
+      name: 'description',
+      content: 'Boost your productivity with Vue Boost - work smarter, not harder.'
+    }
+  ]
 })
 </script>
 
 <template>
   <div class="flex flex-col justify-center items-center gap-5 text-center h-screen px-4">
     <div class="flex flex-col gap-2 items-center text-center">
-      <Icon icon="mdi:information-outline" width="70" />
+      <Icon icon="fluent:tab-desktop-multiple-20-regular" width="70" />
       <h1 class="text-center font-medium text-2xl">About</h1>
       <p class="font-light max-w-[780px] text-left text-lg">
         <a

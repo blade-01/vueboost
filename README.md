@@ -116,6 +116,10 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+### Variations
+
+- [Vue Boost + Nuxt 3](https://vueboost-nuxt3.vercel.app/) - Vue Boost for Nuxt 3.
+
 ## Try it now!
 
 ### GitHub Template

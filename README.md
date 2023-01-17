@@ -118,7 +118,7 @@ Inspired by <a href="https://github.com/antfu/vitesse">Vitesse</a>
 
 ### Variations
 
-- [Vue Boost + Nuxt 3](https://vueboost-nuxt3.vercel.app/) - Vue Boost for Nuxt 3.
+- [Vue Boost + Nuxt 3](https://github.com/blade-01/vueboost-nuxt3) - Vue Boost for Nuxt 3.
 
 ## Try it now!
 

@@ -3,7 +3,7 @@
     <div class="flex flex-col justify-center items-center text-center">
       <img
         v-lazy="
-          'https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w_gdg5d5.svg'
+          'https://res.cloudinary.com/bladencove/image/upload/v1673219185/RC/vueboost_w.svg'
         "
         alt="logo"
         class="w-[80px] h-[80px] object-contain"
@@ -11,7 +11,7 @@
       />
       <img
         v-lazy="
-          'https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost_dhrmmb.svg'
+          'https://res.cloudinary.com/bladencove/image/upload/v1673218739/RC/vueboost.svg'
         "
         alt="logo"
         class="w-[80px] h-[80px] object-contain"

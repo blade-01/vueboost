@@ -43,7 +43,7 @@
 <script setup lang="ts">
 interface Props {
   type: string
-  modelValue: string | number
+  modelValue: string | number | object
   label?: string
   placeholder?: string
   password?: boolean

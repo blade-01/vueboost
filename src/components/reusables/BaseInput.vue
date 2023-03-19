@@ -13,15 +13,13 @@
         class="input-style"
         :class="{ err: error }"
       />
-      <span
+      <Icon
         v-if="password"
         class="mdi absolute top-1/2 -translate-y-1/2 right-4 cursor-pointer"
-        :class="[
-          type === 'password' ? 'mdi-eye' : 'mdi-eye-off',
-          { 'err-message': error }
-        ]"
+        :class="{ 'err-message': error }"
+        :icon="type === 'password' ? 'mdi:eye-outline' : 'mdi:eye-off-outline'"
         @click="$emit('changeType')"
-      ></span>
+      />
     </div>
     <small
       :class="{ 'err-message': error }"
@@ -41,6 +39,7 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 interface Props {
   type: string
   modelValue: string | number | object
